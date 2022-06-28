@@ -2,9 +2,58 @@
 <head>
     <meta charset="utf-8">
     <title>Dev Blog-noob</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        h1 {
+            margin: 0 0 0 0;
+            border-bottom: 2px solid gray;
+            text-align-last: center;
+            font-size: 45px;
+            padding: 20px;
+        }
+        #top-bar {
+                padding-right: 20px;
+                text-align: end;
+                background-color: gainsboro;
+        }
+        #wrapper {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+        }
+        #wrapper ul {
+            padding-top: 15px;
+            padding-left: 30px;
+            margin-top: 0;
+            border-right: 1px solid grey;
+        }
+        #list {
+            border-right: 1px rgb(0, 0, 0);
+        }
+        #article{
+            padding: 50px;
+        }
+        #to-top{
+            text-align: center;
+        }
+        @media(max-width:800px){
+            #wrapper{
+                display: block;
+            }
+            #list{
+                border-right: none;
+            }
+        }
+        
+    </style>
 </head>
 <body>
-    <div>현제 페이지 제목</div>
-    <div>상단바 - login,setup,day-dark</div>
-    <div>목차</div>
+    <h1>현제 페이지 제목</h1>
+    <div id="top-bar">상단바 - 로그인, 설정, 데이모드 다크모드, 검색</div>
+    <div id="wrapper">
+        <ul id="list">목차</ul>
+        <div id="article">본문</div>
+    </div>
+    <div id="to-top"><input  type="button" value="top" ></div>
 </body>
